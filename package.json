@@ -2,9 +2,17 @@
   "name": "rollup-plugin-image-source",
   "version": "0.0.1",
   "description": "generate optimized images and image sources",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist",
+    "types",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -15,8 +23,10 @@
     "plugin",
     "image",
     "optimize",
-    "source"
+    "source",
+    "rollup-plugin"
   ],
+  "types": "types/index.d.ts",
   "author": "Arshia Moghaddam",
   "license": "ISC",
   "bugs": {
@@ -24,8 +34,23 @@
   },
   "homepage": "https://github.com/ars2062/rollup-plugin-image-source#readme",
   "devDependencies": {
+    "@babel/core": "^7.19.1",
+    "@babel/preset-react": "^7.18.6",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^14.1.0",
     "@rollup/plugin-typescript": "^8.5.0",
+    "@rollup/pluginutils": "^4.2.1",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^18.7.18",
+    "mocha": "^10.0.0",
     "rollup": "^2.79.0",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.0",
     "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
