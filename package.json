@@ -1,9 +1,10 @@
 {
-  "name": "rollup-plugin-image-source",
+  "name": "vite-plugin-react-image-dns",
   "version": "0.0.1",
   "description": "generate optimized images and image sources",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
+  "type": "module",
   "files": [
     "dist",
     "types",
@@ -12,7 +13,8 @@
   ],
   "scripts": {
     "test": "mocha",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "dev": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -24,7 +26,11 @@
     "image",
     "optimize",
     "source",
-    "rollup-plugin"
+    "rollup-plugin",
+    "react",
+    "vite",
+    "vite-plugin",
+    "vite-plugin-react"
   ],
   "types": "types/index.d.ts",
   "author": "Arshia Moghaddam",
@@ -44,6 +50,7 @@
     "@types/mocha": "^9.1.1",
     "@types/node": "^18.7.18",
     "mocha": "^10.0.0",
+    "nodemon": "^2.0.20",
     "rollup": "^2.79.0",
     "ts-node": "^10.9.1",
     "tslib": "^2.4.0",

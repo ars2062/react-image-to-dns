@@ -2,8 +2,10 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "lib": ["es6"],
-    "module": "commonjs",
+    "lib": [
+      "es6"
+    ],
+    "module": "ESNext",
     "moduleResolution": "node",
     "noEmit": true,
     "noEmitOnError": false,
@@ -14,6 +16,14 @@
     "strict": true,
     "target": "es2017"
   },
-  "exclude": ["dist", "node_modules", "test/types"],
-  "include": ["src/**/*", "types/**/*", "test/samples"]
+  "exclude": [
+    "dist",
+    "node_modules",
+    "test/types"
+  ],
+  "include": [
+    "src/**/*",
+    "types/**/*",
+    "test/samples"
+  ]
 }

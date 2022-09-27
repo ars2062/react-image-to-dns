@@ -12,7 +12,7 @@ export interface IOptions {
 
 export default function image(options: IOptions = { extensions: [...ImageExtensions] }): Plugin {
     const { exclude, extensions } = options
-    const filter = createFilter(extensions?.map((i) => `**/*.${i}`), exclude)
+    const filter = createFilter(`**/*.{${extensions?.join(', ')}}`, exclude)
     const images: string[] = []
 
     return {
