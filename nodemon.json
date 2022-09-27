@@ -1,5 +1,4 @@
 {
-    "verbose": true,
     "delay": 2500,
     "ignore": [
         "./dist/*.js",
@@ -8,9 +7,9 @@
         "./test/samples/node_modules/**/*"
     ],
     "watch": [
-        "**/*.ts"
+        "./src/**/*.ts"
     ],
     "exec": [
-        "yarn build && cd test/samples && yarn add ..D --offline && yarn build"
+        "yarn build && cd test && yarn build && yarn preview"
     ]
 }
