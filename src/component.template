@@ -1,0 +1,22 @@
+import React, { ImgHTMLAttributes } from "react";
+
+interface ImageProps
+  extends Omit<
+    ImgHTMLAttributes<HTMLImageElement>,
+    "src" | "srcset" | "sizes"
+  > {
+  lazy?: boolean;
+}
+const Component = (props: ImageProps) => {
+  const { lazy, ...rest } = props;
+  return (
+    <img
+      src="{{FILE_URL}}"
+      sizes="{{SIZES}}"
+      srcSet="{{SOURCE_SET}}"
+      {...rest}
+    />
+  );
+};
+
+export default Component;

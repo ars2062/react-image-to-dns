@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ReactLogo from "./assets/react.svg";
 import ViteLogo from "./assets/vite.svg";
+import TestImage from "./assets/Test.jpg";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
         </a>
         <a href="https://reactjs.org" target="_blank">
           <ViteLogo />
+        </a>
+        <a href="#" target="_blank">
+          <TestImage />
         </a>
       </div>
       <h1>Vite + React</h1>

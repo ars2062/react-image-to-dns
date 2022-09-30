@@ -23,8 +23,8 @@
     "test/types"
   ],
   "include": [
-    "src/**/*",
-    "types/**/*",
-    "test/samples"
+    "defenitions.d.ts",
+    "src/**/*.ts",
+    "types/**/*.ts",
   ]
 }
