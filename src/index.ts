@@ -51,7 +51,7 @@ export default function image(options: IOptions = {}): Plugin {
             let component = ''
             if (process.env.NODE_ENV === 'production' && FORMATS_TO_OPTIMIZE.includes(ext as keyof FormatEnum)) {
                 const FILE_URL = `${cdnPath}/${name}-${breakpoints[breakpoints.length - 1]}.${ext}`;
-                const SIZES = `${breakpoints.map(breakpoint => `(min-width: ${breakpoint}px) ${breakpoint}px`).join(', ')}`;
+                const SIZES = `${breakpoints.map(breakpoint => `(min-width: ${breakpoint}px) ${breakpoint}w`).join(', ')}`;
                 const SOURCE_SET = `${breakpoints.map(breakpoint => `${cdnPath}/${name}-${breakpoint}.${ext} ${breakpoint}w`).join(', ')}`;
                 component = componentSrc
                     .replace(/Component/g, name)
