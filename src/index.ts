@@ -75,7 +75,7 @@ export default function image(options: IOptions = {}): Plugin {
         },
         async generateBundle(buildOptions) {
             const dir = getOutputPath(buildOptions, cdnPath);
-            if (!existsSync(dir)) mkdirSync(dir)
+            if (!existsSync(dir)) mkdirSync(dir, { recursive: true })
             for (let i = 0; i < images.length; i++) {
                 const image = images[i];
 
