@@ -1,0 +1,15 @@
+{
+    "delay": 2500,
+    "ignore": [
+        "./dist/*.js",
+        "./node_modules/**/*",
+        "./test/samples/dist/*",
+        "./test/samples/node_modules/**/*"
+    ],
+    "watch": [
+        "./src/**/*.ts"
+    ],
+    "exec": [
+        "yarn build && cd test && yarn build && yarn preview"
+    ]
+}
