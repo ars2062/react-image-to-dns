@@ -1,0 +1,18 @@
+{
+  "name": "react-image-to-dns-core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "files": [
+    "**/*.ts"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/pluginutils": "^5.0.2",
+    "@types/sharp": "^0.31.0"
+  }
+}

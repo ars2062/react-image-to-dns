@@ -15,7 +15,8 @@
     "sourceMap": true,
     "strict": true,
     "target": "es2017",
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    // "baseUrl": "."
   },
   "exclude": [
     "dist",
