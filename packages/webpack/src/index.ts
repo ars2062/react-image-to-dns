@@ -13,8 +13,16 @@ export default class ImageToDNSPlugin {
     this.options = options;
   }
   apply(compiler: Compiler) {
-    console.log(compiler);
-    compiler.hooks.done.tapAsync("ImageToDNSPlugin", (stats, cb) => {
+    // console.log(compiler);
+    compiler.hooks.assetEmitted.tapAsync(
+      "ImageToDNSPlugin",
+      (path, info, cb) => {
+        console.log(path, info);
+
+        cb();
+      }
+    );
+    compiler.hooks.done?.tapAsync("ImageToDNSPlugin", (stats, cb) => {
       console.log(stats);
       cb();
     });

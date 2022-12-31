@@ -141,5 +141,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "sharp": "^0.31.3"
   }
 }

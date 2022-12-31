@@ -10,6 +10,6 @@
         "./src/**/*.ts"
     ],
     "exec": [
-        "yarn build && cd test && yarn build && yarn preview"
+        "yarn build && cd test && yarn build && yarn start"
     ]
 }
